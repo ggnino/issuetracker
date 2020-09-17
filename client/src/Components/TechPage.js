@@ -9,7 +9,7 @@ function TechPage() {
 
     // GET database info on component mount
     useEffect(() => {
-        Axios.get('/techissues').then(res => {
+        Axios.get('/techissues').then(res => {console.log(res)
             setIssue([...res.data])
     }).catch(err => console.log("Error"+err))
     }, [])
