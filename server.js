@@ -5,6 +5,7 @@ const app = express();
 const db = require('./config/dbkey');
 const port = process.env.PORT || 5000;
 const route = require('./routes/api.js');
+const path = require('path');
 
 // Middleware
 app.use(express.json());
